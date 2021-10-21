@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+.motherFont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 30px;
+    width: 600px;
+    height: 200px;
+    background: rgb(0, 0, 66);
+    border-radius: 30px;
+    transition: all 2s;
+}
+.motherFont:hover{
+    background: black;
+    width: 800px;
+}
+.childFont{
+    color: white;
+}
+.childFont i{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.motherTran{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    background: rgb(0, 0, 66);
+    border-radius: 20px;
+    transition: all 2s;
+}
+@keyframes skew {
+    0%{
+        transform: skewX(60deg);
+    }
+    50%{
+        transform: skewY(20deg);
+    }
+    100%{
+        transform: skewX(-40deg);
+    }
+}
+.childTran{
+    width: 100px;
+    height: 100px;
+    background: white;
+    transform: skew(30deg);
+    animation: skew 4s infinite;
+}
+.cssback{
+    display: block;
+    width: 500px;
+    height: 500px;
+    background: url("./image/carnage.jpg")center no-repeat;
+    background-size: cover;
+
+}
+.motherobj{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.childobj{
+    width: 32%;
+}
+.imgobj{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.imgobj img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.motherrow{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1200px;
+}
+.childrow{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.imgrow{
+    width: 40%;
+    height: 300px;
+}
+.imgrow img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.textrow{
+    width: 50%; 
+}
